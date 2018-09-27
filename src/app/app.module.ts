@@ -1,3 +1,4 @@
+import { AuthGuardService } from './auth-guard.service';
 import { AuthService } from './auth.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -47,6 +48,7 @@ import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.componen
   ],
   providers: [
     AuthService,
+    AuthGuardService,
   ],
   bootstrap: [AppComponent]
 })
